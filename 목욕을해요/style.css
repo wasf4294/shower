@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+body,
+html{margin: 0;padding: 0;overflow: hidden;}
+.container{width: 100vw;height: 100vh;display: flex;align-items: center;justify-content: center;}
+.wrapper{height: 100%;width: 100%;}
+.aspect {height: 100%;width: 100%;display: flex;justify-content: center;}
+.aspect-inner{width: 100%;height: 100%;display: flex;align-items: center; justify-content: center; background-color: rgb(232, 209, 255);}
+
+.flipbook {
+    left: 0;
+
+    height: 100%;
+    transition: margin-left 0.25s ease-out;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.flipbook .page {
+height: 100%;
+width: 100%;
+}
+.flipbook .page img {
+max-width: 100%;
+height: 100%;
+}
+
+/* 로딩이미지 */
+.loading-container{position: absolute;width: 100vw;height: 100vh;z-index: 2000;}
+.loading-box{width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;}
+.loadingImg{width: 100%;height: 100%;}
